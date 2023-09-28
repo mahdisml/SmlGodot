@@ -12,7 +12,7 @@ func _process(delta):
 	
 	if (fps_count >= 60):
 		exact_fps = (exact_fps / 60)
-		self.text = str(exact_fps)
+		self.text = "FPS :" + str(int(exact_fps))
 		exact_fps = 0
 		fps_count = 0
 	pass
